@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0; 
+}
+
+
+body {
+    background-image: url(design/teglafal.jpg);
+}
+
+
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "a n"
+    "f f"
+    ;
+
+}
+
+header {
+    grid-area: h;
+    background-image: url(design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size: cover;
+     
+}
+
+header h1 {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    margin: 30px 0 0 30px;
+    text-transform: uppercase;
+ 
+}
+
+
+nav {
+    grid-area: n;
+    text-decoration: none;
+
+   
+}
+
+nav ul li {
+    background-color: #333333;
+    margin: 5px 5px 1px 15px;
+    padding: 5px;
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 5px;
+ 
+}
+
+nav ul li :hover{
+    background-color: red;
+    display: block;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+
+h4 {
+    padding: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    border-radius: 2px;
+    color: red;
+    font-weight: bold;
+    padding-left: 15px;
+    
+ 
+}
+
+article {
+    grid-area: a;
+    background-color: black;
+    padding: 0 1rem 1rem 0;
+    
+    
+}
+
+article li {
+    font-size: 10px;
+    text-align: justify;
+    list-style-type: square;
+    margin-left: 10rem;
+}
+
+img {
+    width: 120px;
+    margin: 0rem 3rem 2rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 4px;
+    float: left;
+    
+}
+
+footer {
+    grid-area: f;
+    padding: 10px;
+    color: white;
+    background-color: gainsboro;
+    text-align: center;
+}
